@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Personal Profile</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">PERSONAL PROFILE</div>
+    <ul class="nav-links">
+      <li><a href="#growth">GROWTH STORY</a></li>
+      <li><a href="#about">ABOUT ME</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header + Foto -->
+<header class="hero">
+  <img src="foto ica.jpg" alt="Profile Photo" class="profile-pic">
+  
+  <h1 class="hero-title">Hai, saya Annisa Kurnia &lt;3 !</h1>
+
+  <div class="hero-divider">
+    <span class="line"></span>
+    <span class="star">★</span>
+    <span class="line"></span>
+  </div>
+
+  <p class="hero-subtitle">"Agricultural Technology Student '24 | Politeknik Negeri Jember"</p>
+</header>
+
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Halo! Namaku Annisa Kurnia, aku adalah mahasiswi jurusan Teknologi Pertanian di Politeknik Negeri Jember. Saat ini aku tinggal di Kebonsari.
+         Selain menjalani aktivitas perkuliahan, aku juga aktif berorganisasi di kampus. 
+         Aku suka terlibat dalam berbagai kegiatan produktif, seperti menjadi MC dan pengisi acara jurusan. 
+         Bagi aku, hal-hal seperti ini bukan hanya menambah pengalaman, tapi juga jadi cara untuk terus belajar dan berkembang.
+         Aku punya cita-cita untuk memiliki usaha sendiri yang bisa berkembang pesat. 
+         Karena itu, aku terus berusaha untuk membangun skill, relasi, 
+         dan mentalitas yang siap menghadapi dunia wirausaha di masa depan.</p>
+    </section>
+   <section id="growth">
+  <h2 class="growth-title">Growth Story</h2>
+  <div class="growth-divider">
+    <span class="line"></span>
+    <span class="star"><i class="fas fa-star"></i></span>
+    <span class="line"></span>
+  </div>
+
+  <div class="growth-icons">
+    <div class="growth-step" onclick="openModal('modal1')">
+      <img src="icon1.png" alt="Step 1" />
+      <p>Mulai Belajar</p>
+    </div>
+    <div class="growth-step" onclick="openModal('modal2')">
+      <img src="icon2.png" alt="Step 2" />
+      <p>Berlatih Coding</p>
+    </div>
+    <div class="growth-step" onclick="openModal('modal3')">
+      <img src="icon3.png" alt="Step 3" />
+      <p>Menjadi Developer</p>
+    </div>
+  </div>
+</section>
+    </div>
+  </div>
+</section>
+
+   <section id="contact">
+  <h2>Contact</h2>
+  <p>Hubungi saya melalui platform berikut:</p>
+  <div class="contact-links">
+    <a href="Annisakurniafebriyanti@gmail.com" target="_blank">📧 Email</a>
+    <a href="https://wa.me/6285856870901" target="_blank">💬 WhatsApp</a>
+    <a href="https://www.instagram.com/_ich.aa?igsh=ZTZ4MDAxdXU5MTA5" target="_blank">📷 Instagram</a>
+  
+  </div>
+</section>
+  </main>
+<!-- Modal 1 -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <h2>Mulai Belajar</h2>
+    <p>Langkah pertama dimulai dengan memahami dasar-dasar komputer dan internet.</p>
+    <button onclick="closeModal('modal1')" class="close-btn">Tutup</button>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <h2>Berlatih Coding</h2>
+    <p>Belajar HTML, CSS, JavaScript, dan membuat berbagai proyek sederhana.</p>
+    <button onclick="closeModal('modal2')" class="close-btn">Tutup</button>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+<div id="modal3" class="modal">
+  <div class="modal-content">
+    <h2>Menjadi Developer</h2>
+    <p>Membangun portofolio, ikut komunitas, dan mulai proyek nyata.</p>
+    <button onclick="closeModal('modal3')" class="close-btn">Tutup</button>
+  </div>
+</div>
+
+  <footer>
+    <p>&copy; 2025 Personal Profile</p>
+  </footer>
+  <script>
+  function openModal(id) {
+    document.getElementById(id).style.display = "block";
+  }
+
+  function closeModal(id) {
+    document.getElementById(id).style.display = "none";
+  }
+
+  // Klik luar untuk menutup
+  window.onclick = function(event) {
+    const modals = document.querySelectorAll(".modal");
+    modals.forEach(modal => {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    });
+  };
+</script>
+
+</body>
+</html>

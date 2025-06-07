@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #e2997b; /* coklat muda */
+  color: #333;
+}
+
+.navbar {
+  background-color: #a36c50; /* coklat tua */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  color: #fff;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background-color: #f2c6b4;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+ p.profile-pic {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid #fff;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+main {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+h2 {
+  font-size: 28px;
+  color: #a97155;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: auto;
+}
+.contact-links {
+  margin-top: 20px;
+}
+
+.contact-links a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #a97155;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.contact-links a:hover {
+  background-color: #8e5d45;
+}
+
+
+footer {
+  background-color: #a97155;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+.hero {
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 60px 20px;
+}
+.growth-title {
+  text-align: center;
+  color: #7da6d9;
+  font-size: 2.2em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.growth-divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 28px;
+  gap: 10px;
+}
+
+.growth-divider .line {
+  flex: 1;
+  height: 3px;
+  background: #c7d8ef;
+  border-radius: 2px;
+  max-width: 90px;
+}
+
+.growth-divider .star {
+  color: #7da6d9;
+  font-size: 1.5em;
+}
+
+.growth-icons {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 20px;
+}
+
+.growth-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.growth-step .icon {
+  background: #e6ecfa;
+  color: #5a7bb7;
+  border-radius: 50%;
+  padding: 22px;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 12px rgba(90,123,183,0.12);
+  transition: background 0.3s, color 0.3s;
+}
+
+.growth-step .icon:hover {
+  background: #5a7bb7;
+  color: #fff;
+}
+
+.growth-step p {
+  font-weight: 500;
+  color: #5a7bb7;
+  margin: 0;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .growth-icons {
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+}
+.growth-step {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.growth-step:hover {
+  transform: scale(1.05);
+}
+
+/* Modal Style */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background: white;
+  margin: 10% auto;
+  padding: 30px;
+  width: 70%;
+  max-width: 500px;
+  border-radius: 10px;
+  text-align: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.close-btn {
+  margin-top: 20px;
+  padding: 8px 20px;
+  background-color: #e74c3c;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+/* Hero Header */
+.hero {
+  text-align: center;
+  background-color: #f48b8b; /* warna pink seperti gambar */
+  padding: 60px 20px;
+  color: white;
+}
+
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff;
+  margin-bottom: 20px;
+}
+
+/* Judul nama */
+.hero-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  margin: 10px 0;
+  color: white;
+}
+
+/* Garis dan bintang */
+.hero-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.hero-divider .line {
+  height: 2px;
+  width: 50px;
+  background-color: white;
+  margin: 0 10px;
+}
+
+.hero-divider .star {
+  font-size: 20px;
+  color: white;
+}
+
+/* Subjudul */
+.hero-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1em;
+  font-style: italic;
+  color: white;
+}
